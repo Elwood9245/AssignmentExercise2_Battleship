@@ -30,6 +30,7 @@ public class Square {
         if (!hasFiredAt){
             hasFiredAt = true;
         }
+        return false;
     }
 
 

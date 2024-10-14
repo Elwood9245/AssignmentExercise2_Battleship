@@ -10,12 +10,13 @@ public class Battleship {
         this.healthValue = size;  // health values are depended directly on size.
     }
 
-    //Dealing with a battleship which is hit.
-    public void hit(){
+    //Dealing with a battleship which is hit. Check if it is sunk.
+    public boolean hit(){
         healthValue--;
         if (healthValue == 0){
             isSunk = true;
         }
+        return isSunk;
     }
 
 
